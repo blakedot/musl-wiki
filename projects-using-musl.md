@@ -2,55 +2,57 @@
 
 # Linux distributions using musl
 
-- [sabotage] - experimental Linux distribution based on busybox and musl.
-    - About 700 packages including X11, LXDE, alsa, SDL, C++.
-    - Supports i386, x86_64, arm, mips, powerpc
-    - Uses lightweight replacements for netlink, pkg-config, and gettext
-    - Optimized for build speed and small binary size
-    - Per-package directories following stow/gobolinux spirit
-- [bootstrap-linux] - consists only of a minimal set of packages that can be
-  crosscompiled. kernel, toolchain, busybox.
-- [Mere Linux]
-    - Uses pacman for package management and s6 for process supervision
-    - Contains instructions for bootstrapping LFS-style
-- [Snowflake]
-    - Includes only of a minimal set of packages that can be crosscompiled.
-      (Kernel, toolchain, busybox, gawk, make and sed)
-    - Uses pkgsrc for additional packages, so supports thousands of packages
-    - Mainly a platform for testing usrview, a system for per-process views of
-      /usr, for very fine-grained control of package management.
-- [TAZ] - a Gentoo-based livecd/livedvd
-- [Embedded Linux From Scratch] - a fork of CLFS embedded using musl libc
-    - 2013-09-28 Updated to correct name of toolchain used
-    - 2013-09-14 Updated to musl-0.9.13. Supports \*-\*-musl\* toolchains.
-- [Cross Linux From Scratch] - CLFS uses musl since 16.10.2013
-  ([Announcement][CLFS-announcement])
-- [morpheus] - suckless linux distro
-- [Bedrock Linux] - as of version 1.0alpha4
+- [Abyss] - An independent Linux distribution based on musl and pure LLVM.
+- [Adélie Linux] - A small, independent Linux distribution focused on delivering a high quality operating environment, aiming for POSIX® compliance, compatibility with a wide variety of computers, and ease of use without sacrificing features.
 - [Alpine Linux] - based on musl since the 3.0 release.
-- [Void Linux] provides official musl based images.
-- [Exherbo] has an x86_64 musl stage.
-- [oasis] - statically linked linux distribution based on musl and other
-  lightweight components.
 - [Ataraxia Linux] - Independent, multi-platform, general purpose operating system based on the Linux kernel and musl libc.
     - Supports 17 different CPU architectures
     - Has merged /usr for better compatibility
     - Extremely bleeding edge
     - Uses ZSTD where it's possible. Kernel, modules and initrd are using ZSTD by default.
-- [Talos] - A modern Linux distribution for Kubernetes.
-- [Vanilla] - A radically different, new, simple, customizable Linux
-  distribution based on musl, busybox using LLVM/Clang as toolchain.
+- [Bedrock Linux] - as of version 1.0alpha4
+- [bootstrap-linux] - consists only of a minimal set of packages that can be
+  crosscompiled. kernel, toolchain, busybox.
+- [Cross Linux From Scratch] - CLFS uses musl since 16.10.2013
+  ([Announcement][CLFS-announcement])
 - [Dragora] - An independent GNU/Linux-Libre distribution based on concepts of simplicity.
     - Contains 100% free software.  Musl is included in Dragora for the 3.0 series (back in 2012).
     - Per-package directories using qi (an own package manager) and graft following the GNU stow's spirit.
     - /usr merge, offering compatibility with the Filesystem Hierarchy Standard (FHS).
     - Uses sysvinit combined with perp for the supervision of critical services.
     - Supports several architectures via bootstrap, but is currently available for x86 (i586+), x86_64.
-- [Abyss] - An independent Linux distribution based on musl and pure LLVM.
+- [Embedded Linux From Scratch] - a fork of CLFS embedded using musl libc
+    - 2013-09-28 Updated to correct name of toolchain used
+    - 2013-09-14 Updated to musl-0.9.13. Supports \*-\*-musl\* toolchains.
+- [Exherbo] has an x86_64 musl stage.
+- [glaucus] - An independent, open-source, general-purpose, bleeding-edge, rolling-release, source-based Linux® distribution based on musl libc and toybox, built from scratch around the suckless philosophy without sacrificing convenience.
+- [Mere Linux]
+    - Uses pacman for package management and s6 for process supervision
+    - Contains instructions for bootstrapping LFS-style
+- [morpheus] - suckless linux distro
+- [oasis] - statically linked linux distribution based on musl and other
+  lightweight components.
+- [sabotage] - experimental Linux distribution based on busybox and musl.
+    - About 700 packages including X11, LXDE, alsa, SDL, C++.
+    - Supports i386, x86_64, arm, mips, powerpc
+    - Uses lightweight replacements for netlink, pkg-config, and gettext
+    - Optimized for build speed and small binary size
+    - Per-package directories following stow/gobolinux spirit
+- [Snowflake]
+    - Includes only of a minimal set of packages that can be crosscompiled.
+      (Kernel, toolchain, busybox, gawk, make and sed)
+    - Uses pkgsrc for additional packages, so supports thousands of packages
+    - Mainly a platform for testing usrview, a system for per-process views of
+      /usr, for very fine-grained control of package management.
 - [solyste] - statically linked linux distribution targetting embedded hardware
 and various architectures
-- [glaucus] - An independent, open-source, general-purpose, bleeding-edge, rolling-release, source-based Linux® distribution based on musl libc and toybox, built from scratch around the suckless philosophy without sacrificing convenience.
+- [Talos] - A modern Linux distribution for Kubernetes.
+- [TAZ] - a Gentoo-based livecd/livedvd
+- [Vanilla] - A radically different, new, simple, customizable Linux
+  distribution based on musl, busybox using LLVM/Clang as toolchain.
+- [Void Linux] provides official musl based images.
 
+[Adélie Linux]: https://www.adelielinux.org/
 [sabotage]: http://sabo.xyz/
 [bootstrap-linux]: https://github.com/pikhq/bootstrap-linux
 [Mere Linux]: https://merelinux.org
